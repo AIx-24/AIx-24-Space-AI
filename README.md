@@ -173,4 +173,5 @@ Future work includes:
 
 **AIx-24**  
 Жоба екі қатысушыдан тұратын командамен орындалды.
-Beibit Marlen, Saulethanuly Darkhan Lyceum 24
+Beibit Marlen, Saulethanuly Darkhan.
+Lyceum 24
