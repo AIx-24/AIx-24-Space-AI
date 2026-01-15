@@ -149,6 +149,7 @@ AI-controlled and baseline scenarios were compared, and results were visualized 
 ## Results
 
 Simulation results demonstrate that the AI-enabled system maintains mission stability longer and keeps critical parameters within safe ranges compared to a baseline system.
+![Energy comparison](images/energy_comparison.png)
 
 ---
 
