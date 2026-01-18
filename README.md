@@ -1,5 +1,5 @@
 # Ғарыштық миссияны басқарудың өзін-өзі қалпына келтіретін интеллектуалдық жүйесін әзірлеу
-## Autonomous Mission Recovery System for Spacecraft
+## Development of a self-healing intelligent space mission management system
 
 ---
 
