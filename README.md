@@ -1,4 +1,5 @@
-# AIx-24: Autonomous Self-Healing System for Space Missions
+# AIx-24: Ғарыштық миссияны басқарудың өзін-өзі қалпына келтіретін интеллектуалдық жүйесін әзірлеу
+# AIx-24: Development of a self-healing intelligent system for autonomous space mission management
 > **Project for AEROO SPACE AI COMPETITION 2026**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
