@@ -51,3 +51,22 @@
 1. **Клонируйте репозиторий:**
    ```bash
    git clone [https://github.com/AIx-24/AIx-24-Space-AI.git](https://github.com/AIx-24/AIx-24-Space-AI.git)
+2. **Установите зависимости:**
+   ```bash
+   pip install -r requirements.txt
+3. **Запустите симуляцию: Откройте файл space_ai.ipynb в VS Code или Jupyter Lab и выполните все ячейки (Run All).**
+
+---
+
+## 📁 Структура проекта
+* **space_ai.ipynb** — Ядро проекта: среда симуляции и обучение RL-агента.
+* **requirements.txt** — Список необходимых библиотек.
+* **images/** — Визуализация данных и графики производительности.
+* **PitchDeck_AIx-24.pptx** — Презентация проекта для жюри и инвесторов.
+
+---
+
+## 👥 Команда (Team AIx-24)
+* **Beibit Marlen** — AI Engineer / Lead Developer
+* **Saulethanuly Darkhan** — Business Analyst / Space Systems Architect
+* **Lyceum 24 Taldykorgan, Zhetisu region**
