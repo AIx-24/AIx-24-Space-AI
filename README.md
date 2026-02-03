@@ -6,68 +6,64 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![AI-Model: Reinforcement Learning](https://img.shields.io/badge/AI-Reinforcement%20Learning-green.svg)]()
 
-## 🛰️ Обзор проекта / Project Overview
-**AIx-24 Space AI** — это интеллектуальная система управления космическими аппаратами, способная автономно восстанавливать работоспособность спутника в критических условиях. 
+## 🛰️ Жобаға шолу / Project Overview
 
-В отличие от традиционных систем, требующих вмешательства оператора с Земли (что ведет к фатальным задержкам), наше решение использует **Reinforcement Learning (Q-Learning)** для мгновенного принятия решений по оптимизации ресурсов.
+**KZ:** "AIx-24 Space AI" — бұл критикалық жағдайларда спутниктің жұмысқа қабілеттілігін автономды түрде қалпына келтіруге қабілетті интеллектуалды басқару жүйесі. Жүйе **Reinforcement Learning (Q-Learning)** алгоритмін қолдана отырып, ресурстарды оңтайландыру бойынша қауіпсіз шешімдерді бірден қабылдайды.
+
+**EN:** AIx-24 Space AI is an intelligent spacecraft control system capable of autonomously restoring satellite functionality in critical environments. Using **Reinforcement Learning (Q-Learning)**, the system makes instantaneous resource optimization decisions to ensure mission continuity.
 
 ---
 
-## ⚡ Проблема и Решение
-| Проблема | Наше решение (AIx-24) |
+## ⚡ Мәселе және Шешім / Problem & Solution
+
+| Мәселе (Problem) | Шешім (Solution - AIx-24) |
 | :--- | :--- |
-| **Деградация энергии:** Спутник теряет питание при пиковых нагрузках. | ИИ динамически перераспределяет лимиты потребления между модулями. |
-| **Термическая нестабильность:** Перегрев компонентов ведет к поломке. | Автоматическая активация систем охлаждения или перевод в Safe Mode. |
-| **Задержка сигнала (Latency):** Реакция с Земли занимает слишком много времени. | Полная автономность — решение принимается на борту за миллисекунды. |
+| **Энергия деградациясы:** Пиктік жүктеме кезінде қуаттың жоғалуы. | ЖИ модульдер арасында тұтыну лимиттерін динамикалық түрде қайта бөледі. |
+| **Термиялық тұрақсыздық:** Қызып кету жүйенің істен шығуына әкеледі. | Салқындату жүйелерін автоматты түрде қосу немесе Safe Mode-қа көшу. |
+| **Сигналдың кешігуі (Latency):** Жерден басқару тым ұзақ уақыт алады. | Толық автономдық — шешім бортта миллисекундтар ішінде қабылданады. |
 
 ---
 
-## 🧠 Техническая реализация (AI Approach)
-Проект базируется на алгоритме **обучения с подкреплением (RL)**.
-* **Agent State:** Анализ 3-х векторов: `[Energy Level, Temperature, System Health]`.
-* **Action Space:** 4 ключевых действия: `[Idle, Payload Shutdown, Cooling On, Energy Redistribution]`.
-* **Reward Function:** Агент получает штрафы за выход температуры из диапазона и критическое падение энергии, обучаясь поддерживать миссию в стабильном состоянии максимально долго.
+## 🧠 Техникалық іске асыру / AI Approach
+
+**KZ:** Жүйе **Reinforcement Learning (RL)** негізінде жұмыс істейді:
+* **Агент күйі (State):** `[Энергия деңгейі, Температура, Жүйе күйі]`.
+* **Әрекеттер (Actions):** `[Күту, Жүктемені өшіру, Салқындатуды қосу, Энергияны қайта бөлу]`.
+* **Марапаттау функциясы (Reward):** Агент миссияны мүмкіндігінше ұзақ әрі тұрақты ұстауға үйретілген.
+
+**EN:** The system is based on **Reinforcement Learning (RL)** principles:
+* **Agent State:** `[Energy Level, Temperature, System Health]`.
+* **Action Space:** `[Idle, Payload Shutdown, Cooling On, Energy Redistribution]`.
+* **Reward Function:** The agent is trained to maintain mission stability for as long as possible through a penalty/reward system.
 
 ---
 
-## 💼 Бизнес-модель (Startup Component)
-Наш продукт позиционируется как **B2B Software-as-a-Service (SaaS)** для спутниковых операторов и космических агентств.
+## 💼 Бизнес-модель / Startup Component
 
-* **Целевая аудитория:** Операторы низкоорбитальных группировок (LEO), частные компании (NewSpace), исследовательские миссии.
-* **Ценность:** Снижение риска потери аппарата стоимостью от $500k до $100M+.
-* **Монетизация:** Лицензирование ПО на каждый запущенный аппарат + кастомизация под специфическое оборудование.
+**KZ:** Біздің өнім спутниктік операторлар мен ғарыш агенттіктеріне арналған **B2B Software-as-a-Service (SaaS)** ретінде позицияланады.
+* **Құндылығы:** Құны 500 мың доллардан 100 млн долларға дейінгі аппаратты жоғалту қаупін азайту.
+* **Монетизация:** Әрбір ұшырылған аппаратқа лицензия сату.
 
----
-
-## 📊 Результаты симуляции
-В ходе тестов система с ИИ показала:
-1.  Увеличение срока службы батареи в критическом режиме на **35%**.
-2.  Снижение частоты перегревов на **50%** по сравнению с классическими алгоритмами управления.
-
-*(Графики сравнения доступны в папке `/images`)*
+**EN:** Our product is positioned as a **B2B SaaS** solution for satellite operators and space agencies.
+* **Value Proposition:** Reducing the risk of losing assets valued from $500k to $100M+.
+* **Monetization:** Software licensing per deployed satellite + customization services.
 
 ---
 
-## 🚀 Инструкция по запуску
-1. **Клонируйте репозиторий:**
-   ```bash
-   git clone [https://github.com/AIx-24/AIx-24-Space-AI.git](https://github.com/AIx-24/AIx-24-Space-AI.git)
-2. **Установите зависимости:**
-   ```bash
-   pip install -r requirements.txt
-3. **Запустите симуляцию: Откройте файл space_ai.ipynb в VS Code или Jupyter Lab и выполните все ячейки (Run All).**
+## 📊 Нәтижелер / Results
+* **Battery Life:** +35% (критикалық режимде).
+* **Thermal Safety:** Қызып кету жағдайлары 50%-ға азайды.
 
 ---
 
-## 📁 Структура проекта
-* **space_ai.ipynb** — Ядро проекта: среда симуляции и обучение RL-агента.
-* **requirements.txt** — Список необходимых библиотек.
-* **images/** — Визуализация данных и графики производительности.
-* **PitchDeck_AIx-24.pptx** — Презентация проекта для жюри и инвесторов.
+## 🚀 Іске қосу нұсқаулығы / Installation & Launch
+1. **Репозиторийді клондау:** `git clone https://github.com/AIx-24/AIx-24-Space-AI.git`
+2. **Кітапханаларды орнату:** `pip install -r requirements.txt`
+3. **Симуляцияны бастау:** `space_ai.ipynb` файлын ашып, барлық ячейкаларды орындаңыз.
 
 ---
 
-## 👥 Команда (Team AIx-24)
+## 👥 Команда / Team AIx-24
 * **Beibit Marlen** — AI Engineer / Lead Developer
 * **Saulethanuly Darkhan** — Business Analyst / Space Systems Architect
-* **Lyceum 24 Taldykorgan, Zhetisu region**
+* **Lyceum 24, Taldykorgan, Jetisu region**
